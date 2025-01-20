@@ -1,0 +1,49 @@
+* {
+  font-family: "Nunito";
+}
+
+.optionscontainer {
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 0 20px;
+}
+
+.buttonscontainer {
+  width: 830px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optionsbutton {
+  width: 132.63px;
+  height: 46px;
+  border-radius: 30px;
+  background: rgb(249, 249, 249);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.optionsbutton:hover {
+  background: rgb(40, 40, 40);
+  color: #fff;
+}
+
+.selectpop {
+  color: rgb(254, 95, 30);
+  text-decoration: underline;
+  border: none;
+}
+
+.allpizza {
+  height: 100px;
+  padding: 0px 20px;
+  background: #fff;
+}
+
+.allpizzatitle {
+  margin: 0;
+}/*# sourceMappingURL=Options.module.css.map */
