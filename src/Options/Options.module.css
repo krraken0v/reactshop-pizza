@@ -15,21 +15,46 @@
   width: 830px;
   display: flex;
   align-items: center;
+  list-style: none;
   justify-content: space-between;
 }
 
 .optionsbutton {
-  width: 132.63px;
-  height: 46px;
+  width: 136px;
+  height: 36px;
   border-radius: 30px;
-  background: rgb(249, 249, 249);
+  color: #111;
+  padding-top: 15px;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.49px;
   transition: 0.5s;
+  text-align: center;
+  margin-right: 20px;
 }
-.optionsbutton:hover {
-  background: rgb(40, 40, 40);
+.active {
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  padding-top: 15px;
+  background: #111;
+  text-align: center;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.49px;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.05px;
 }
 
 .selectpop {

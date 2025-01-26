@@ -1,17 +1,15 @@
 import styles from './Options.module.sass'
-
+import { useState } from 'react';
 function Options(){
-    return(<>
-
+  const options = ["Все","Мясные","Вегетарианская","Гриль","Острые","Закрытые"];
+  const [activeIndex,setActiveIndex] = useState(0);
+  
+  return(<>
     <div className={styles.optionscontainer}>
-        <div className={styles.buttonscontainer}>
-        <button className={styles.optionsbutton}>Все</button>
-        <button className={styles.optionsbutton}>Мясные</button>
-        <button className={styles.optionsbutton}>Вегетарианская</button>
-        <button className={styles.optionsbutton}>Гриль</button>
-        <button className={styles.optionsbutton}>Острые</button>
-        <button className={styles.optionsbutton}>Закрытые</button>
-        </div>
+        <ul className={styles.buttonscontainer}>
+          {options.map((value,i)=><li onClick={()=>setActiveIndex(i)} className={activeIndex == i ? styles.active:styles.optionsbutton}>{value}</li>)}
+        
+        </ul>
         <div className={styles.formcontainer}>
          <form>
           <label>Сортировка по: </label>
@@ -27,6 +25,6 @@ function Options(){
         <h2 className={styles.allpizzatitle}>Все пиццы</h2>
     </div>
     
-    </>)
+  </>)
 }
 export default Options
